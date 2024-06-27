@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET         /Leaderboard/healthCheckup        controllers.HealthController.getHealthCheckup()
+
+GET         /getTopScorers                    controllers.LeaderBoardController.getTopNPlayers()
+POST        /createBoard                      controllers.LeaderBoardController.createLeaderBoard(boardSize: Int)
+POST        /users/score                      controllers.GameController.postScore(request : Request)
+
+
